@@ -15,7 +15,7 @@ nav {
     position: fixed;
     width:100%;
 }
-nav , .submenu>li{
+.navbar , .submenu>li{
     line-height: 50px;
     background-color:rgba(0, 255, 255,0.5);
     margin: 0;
@@ -24,19 +24,13 @@ nav , .submenu>li{
 }
 .submenu{
     margin-top: 50px;
-    position: fixed;
     width:100%;
 }
-nav>ul , .submenu{
+.navbar>ul , .submenu{
     overflow: hidden;
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
-.submenu{
-    margin-top: 50px;
-    position: absolute;
-    width:100%;
 }
 .brand>img {
     overflow: hidden;
