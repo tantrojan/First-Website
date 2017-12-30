@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Lobster|Pacifico');
 @import url('https://fonts.googleapis.com/css?family=Raleway|Slabo+27px|Merriweather');
 /*#################DEFAULT##################*/
+.no_margin {margin: 0;}
 html, body, header, footer {
     display:block;
     margin: 0;
@@ -20,7 +21,7 @@ html, body, header, footer {
 
 .highlight {
     background: red;
-    background: linear-gradient(45deg, white, #66ffff);
+    background: linear-gradient(45deg, white, #ccffff);
 }
 
 .row {
@@ -34,6 +35,8 @@ html, body, header, footer {
     clear: both;
     content: "";
 }
+
+.shift_right{position: relative;right: -20%;}
 
 .col-1 { width: 8.33%}
 .col-2 { width: 16.66%}
@@ -159,7 +162,40 @@ nav {
 
 /*####### ABOUT SECTION ########*/
 
-h1.about_header {
+h1.center_header {
     text-align: center;
     font-family: Merriweather;
+}
+
+/*####### SUGGESTION BOX ########*/
+
+input[type="text"], button{
+    font-size: 12px;
+    font font-family: Raleway;
+    min-width:50%;
+    padding:5px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    font-size: 12px;
+    font font-family: Raleway;
+    padding:5px;
+    width: 60%;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    resize: none;
+    height: 100px;
+}
+
+#sug_bog{
+    display: block;
+}
+
+@media all and (max-width:500px){
+    .col-6{ width: 100%; }
+    #sug_box{display: none; }
+    textarea{width: 100%;}  
+    .shift_right{position:inherit;right:none;}
 }
