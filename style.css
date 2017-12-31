@@ -35,7 +35,6 @@ html, body, header, footer {
     clear: both;
     content: "";
 }
-
 .shift_right{position: relative;right: -20%;}
 
 .col-1 { width: 8.33%}
@@ -102,14 +101,14 @@ nav {
     font-family: Lobster ,serif;
     font-size: 20px;
     text-decoration: none;
-    color:darkblue;
+    color:black;
 }
 .submenu>li>a{
     text-align: center;
     font-family: Lobster ,serif;
     font-size: 20px;
     text-decoration: none;
-    color:white;
+    color:black;
 }
 .expand{
     display: none;
@@ -159,7 +158,22 @@ nav {
     background-image: url("/w3images/parallax3.jpg");
     min-height: 400px;
 }
+/*####### ICONS ########*/
 
+.icon_holder {
+    padding-top: 10%;
+}
+.icon {
+    vertical-align: middle;
+    width: 100%;
+}
+@media all and (max-width:500px){
+    .icon_holder {
+        padding-top: 40%;
+    } 
+    .col-10{ width: 50%;}
+    .col-2{ width: 50%;}
+}
 /*####### ABOUT SECTION ########*/
 
 h1.center_header {

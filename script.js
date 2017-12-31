@@ -1,7 +1,10 @@
 window.onscroll = () => {
     const nav = document.querySelector('.navbar');
-    if(this.scrollY <= 300) nav.style.backgroundColor = "rgba(255, 255, 255,0.2)"; 
+    const nav2 = document.querySelector('.submenu');
+    if(this.scrollY <= 200) nav.style.backgroundColor = "rgba(255, 255, 255,0.2)"; 
     else nav.style.backgroundColor = "azure";
+    if(this.scrollY <= 200) nav2.style.backgroundColor = "rgba(255, 255, 255,0.2)"; 
+    else nav2.style.backgroundColor = "azure";
 };
 
 function dropdown(){
